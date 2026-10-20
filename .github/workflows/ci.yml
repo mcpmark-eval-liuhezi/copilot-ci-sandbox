@@ -1,0 +1,15 @@
+name: Sandbox CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sandbox-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo sandbox CI marker
+        run: echo "sandbox-ci-marker"
+
+      - name: Succeed
+        run: echo "Sandbox CI job completed successfully"
